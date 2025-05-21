@@ -2,7 +2,7 @@ import requests
 import allure
 
 
-headers = {"authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOjIyMDYwODYwLCJpYXQiOjE3NDc3NDA3NTcsImV4cCI6MTc0Nzc0NDM1NywidHlwZSI6MjB9.P9T_vh4u_xsMzpzOt62maljzN5t0UAP0st5iSB_maRE"}
+headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 YaBrowser/25.4.0.0 Safari/537.36","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOjIyMDYwODYwLCJpYXQiOjE3NDc4MTM1NzMsImV4cCI6MTc0NzgxNzE3MywidHlwZSI6MjB9.Z_wahvuB-6I1dJkLHhK_O5Dpg5VZErRL0qlr4HMjIBM"}
 base_url = "https://web-gate.chitai-gorod.ru/api/v2/"
 
 
@@ -35,7 +35,7 @@ def test_search_by_language_english():
 @allure.title("Тестирование поиска с недопустимой японской фразой")
 @allure.description("Проверка, что API возвращает ошибку при поиске с недопустимой японской фразой.")
 def test_negative_api_Japanese():
-    resp = requests.get(f"{base_url}search/product?phrase=人で座ってください")
+    resp = requests.get(f"{base_url}search/product?phrase=人で座ってください", headers=headers)
     assert resp.status_code == 422
 
 @allure.epic("API Тестирование")
