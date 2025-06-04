@@ -2,7 +2,7 @@ import requests
 import allure
 
 
-headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 YaBrowser/25.4.0.0 Safari/537.36","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOjIyMDYwODYwLCJpYXQiOjE3NDc4MTM1NzMsImV4cCI6MTc0NzgxNzE3MywidHlwZSI6MjB9.Z_wahvuB-6I1dJkLHhK_O5Dpg5VZErRL0qlr4HMjIBM"}
+headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 YaBrowser/25.4.0.0 Safari/537.36","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOjIyMDYwODYwLCJpYXQiOjE3NDkwNjIwNjMsImV4cCI6MTc0OTA2NTY2MywidHlwZSI6MjB9.wUsxvp85D9ryit88DcEl6igEr2CjJbHbIVUgI74Ycc4"}
 base_url = "https://web-gate.chitai-gorod.ru/api/v2/"
 
 
